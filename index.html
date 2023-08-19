@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sales</title>
     <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
-    
+
     <!-- Tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,7 +35,8 @@
                 <p class="font-medium text-lg">
                     Use Promo Code
                 </p>
-                <button class="btn bg-[#E527B2] text-white hover:bg-black">SELL200</button>
+                <div class=" px-2 py-2 rounded-md bg-[#E527B2] text-white hover:bg-black">SELL200</div>
+                <!-- <button class="btn bg-[#E527B2] text-white hover:bg-black">SELL200</button> -->
             </div>
         </div>
         <div class="">
@@ -250,7 +251,7 @@
             </div>
 
             <!-- Cart Section -->
-            <section id="cart" class="border w-4/12 h-[80vh] mt-24 flex flex-col gap-10">
+            <section id="cart" class=" w-4/12 h-[80vh] mt-24 flex flex-col gap-10">
                 <!-- Coupon -->
                 <div class="box w-80 bg-white px-8 py-5 rounded-lg">
                     <h3 class="font-medium text-lg">
@@ -258,12 +259,12 @@
                     </h3>
                     <div class="flex gap-0 relative">
                         <input type="text" placeholder="Coupon code" class="input input-bordered w-full inline " />
-                        <button
-                            class="btn  bg-[#E527B2] text-white hover:bg-black rounded-r-lg rounded-l-none border absolute right-0">Apply</button>
+                        <button disabled="disabled"
+                            class="btn bg-[#E527B2] text-white hover:bg-black rounded-r-lg rounded-l-none border absolute right-0">Apply</button>
                     </div>
                 </div>
                 <!-- cart List -->
-                <div class="bg-white w-80 flex flex-col items-center">
+                <div class="bg-white w-80 flex flex-col items-center px-5 py-5">
                     <div id="product-list">
 
                     </div>
@@ -280,7 +281,7 @@
                         </p>
                     </div>
                     <!-- <hr class="border-solid"> -->
-                    <button class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
+                    <button disabled="disabled" class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
                 </div>
             </section>
         </div>
