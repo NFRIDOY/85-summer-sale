@@ -1,0 +1,17 @@
+https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-NFRIDOY
+
+…or create a new repository on the command line
+
+echo "# b8a5-summer-sale-NFRIDOY" >> README.md
+git init
+git add .
+git commit -m "summer-sale"
+git branch -M main
+git remote add origin https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-NFRIDOY.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-NFRIDOY.git
+git branch -M main
+git push -u origin main
