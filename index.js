@@ -46,6 +46,7 @@ function addProduct(target) {
 
     const newProduct = document.createElement("li");
     newProduct.innerText = ProductName;
+    // document.getElementsByTagName(newProduct).
     productList_Element.appendChild(newProduct);
 }
 
@@ -68,7 +69,7 @@ function buy(target) {
         makePurchaseBtn_Element.removeAttribute("disabled");
     }
 
-    if (totalPrice > 200) {
+    if (totalPrice >= 200) {
         applyBtn_Element.removeAttribute("disabled");
     }
 }
