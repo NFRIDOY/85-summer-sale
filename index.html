@@ -259,21 +259,21 @@
                     </h3>
                     <div class="flex gap-0 relative">
                         <input type="text" placeholder="Coupon code" class="input input-bordered w-full inline " />
-                        <button disabled="disabled"
+                        <button id="apply-Btn" disabled="disabled"
                             class="btn bg-[#E527B2] text-white hover:bg-black rounded-r-lg rounded-l-none border absolute right-0">Apply</button>
                     </div>
                 </div>
                 <!-- cart List -->
                 <div class="bg-white w-80 flex flex-col items-center px-5 py-5">
                     <div id="product-name-list">
-                        <ol id="product-list" type="1">
-                            <li></li>
+                        <ol id="product-list" class="list-decimal" type="1">
+
                         </ol>
                     </div>
                     
                     <div class="m-8 w-full ms-20">
                         <p>
-                            Total price: <span>00</span> TK
+                            Total price: <span id="total-price">00</span> TK
                         </p>
                         <p>
                             Discount : <span>00</span> TK
@@ -283,7 +283,7 @@
                         </p>
                     </div>
                     <!-- <hr class="border-solid"> -->
-                    <button disabled="disabled" class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
+                    <button id="Make-Purchase" disabled="disabled" class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
                 </div>
             </section>
         </div>
