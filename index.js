@@ -18,13 +18,13 @@ function getProductName(target) {
     return target.children[1].children[1].innerText;
 }
 
-function updater(element, Who, value) {
-    // Who += value;
-    // console.log(totalPrice);
+// function updater(element, Who, value) {
+//     // Who += value;
+//     // console.log(totalPrice);
 
-    element.innerText = value;
-    // return totalPrice;
-}
+//     element.innerText = value;
+//     // return totalPrice;
+// }
 
 function totalPriceUpdate(target) {
     let productPrice = getPrice(target);
@@ -39,6 +39,7 @@ function totalPriceUpdate(target) {
 
     // updater(totalPrice_Element,totalPrice,productPrice);
 }
+
 
 function addProduct(target) {
     let ProductName = getProductName(target);
@@ -57,6 +58,10 @@ function couponApplyBtn(target){
         discount = totalPrice * 0.2;
         total = totalPrice - discount;
     }
+    else {
+        alert('Invalid Coupon Code');
+        return;
+    }
     discount_Element.innerText = discount;
     total_Element.innerText = total;
 }
@@ -72,6 +77,11 @@ function buy(target) {
     if (totalPrice >= 200) {
         applyBtn_Element.removeAttribute("disabled");
     }
+}
+
+function goHome(target) {
+    // console.log(target);
+    window.location="index.html";
 }
 
 
