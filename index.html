@@ -53,7 +53,7 @@
                     </h1>
                     <div id="Kitchenware-Container" class="grid grid-cols-3 gap-6">
                         <!-- card -->
-                        <div  onclick="buy(this)" class="card w-auto bg-base-100 shadow-xl p-5">
+                        <div onclick="buy(this)" class="card w-auto bg-base-100 shadow-xl p-5">
                             <figure class="px-10 py-10 bg-[#F3F3F3] rounded-lg ">
                                 <img src="./images/prod1.png" alt="Shoes" class="" />
                             </figure>
@@ -258,7 +258,8 @@
                         Have coupon?
                     </h3>
                     <div class="flex gap-0 relative">
-                        <input id="coupon-input" type="text" placeholder="Coupon code" class="input input-bordered w-full inline " />
+                        <input id="coupon-input" type="text" placeholder="Coupon code"
+                            class="input input-bordered w-full inline " />
                         <button id="apply-Btn" onclick="couponApplyBtn(this)" disabled="disabled"
                             class="btn bg-[#E527B2] text-white hover:bg-black rounded-r-lg rounded-l-none border absolute right-0">Apply</button>
                     </div>
@@ -270,7 +271,9 @@
 
                         </ol>
                     </div>
-                    
+
+                    <!-- hr -->
+                    <div class="border h-px w-full mt-9"></div>
                     <div class="m-8 w-full ms-10 font-medium text-2xl">
                         <p class="">
                             Total Price: <span id="total-price">00</span> TK
@@ -282,8 +285,11 @@
                             Total: <span id="total">00</span> TK
                         </p>
                     </div>
+                    <!-- hr -->
+                    <div class="border h-px w-full mb-9"></div>
                     <!-- <hr class="border-solid"> -->
-                    <button id="Make-Purchase" disabled="disabled" onclick="my_modal_1.showModal()" class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
+                    <button id="Make-Purchase" disabled="disabled" onclick="my_modal_1.showModal()"
+                        class="btn w-11/12 text-white hover:bg-black bg-[#E527B2]">Make Purchase</button>
 
                     <div class="Modal1">
                         <!-- Open the modal using ID.showModal() method -->
@@ -294,7 +300,8 @@
                                 <p class="py-4 text-sm">Your Purchased the product</p>
                                 <div class="modal-action flex justify-center">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button onclick="goHome(this)" class="btn text-white hover:bg-black bg-[#E527B2]">Go Home</button>
+                                    <button onclick="goHome(this)" class="btn text-white hover:bg-black bg-[#E527B2]">Go
+                                        Home</button>
                                 </div>
                             </form>
                         </dialog>

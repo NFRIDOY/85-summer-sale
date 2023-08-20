@@ -11,7 +11,7 @@ const total_Element = document.getElementById("total");
 
 
 function getPrice(text) {
-    return parseFloat(text.children[1].children[2].children[0].innerText);
+    return parseFloat(parseFloat(text.children[1].children[2].children[0].innerText).toFixed(2));
 }
 
 function getProductName(target) {
@@ -31,7 +31,7 @@ function totalPriceUpdate(target) {
 
     totalPrice += productPrice;
     // console.log(totalPrice);
-    
+
     totalPrice_Element.innerText = totalPrice;
     // return totalPrice;
 
@@ -47,16 +47,24 @@ function addProduct(target) {
 
     const newProduct = document.createElement("li");
     newProduct.innerText = ProductName;
+    newProduct.classList.add("text-black");
+    newProduct.classList.add("font-medium");
+    newProduct.classList.add("text-2xl");
+    // newProduct.className("");
     // document.getElementsByTagName(newProduct).
     productList_Element.appendChild(newProduct);
 }
 
-function couponApplyBtn(target){
+function get2DecimalNumber(digit) {
+    return parseFloat(digit.toFixed(2));
+}
+
+function couponApplyBtn(target) {
     console.log(target.parentNode);
     const couponCode = couponInput_Element.value;
     if (couponCode === "SELL200") {
-        discount = totalPrice * 0.2;
-        total = totalPrice - discount;
+        discount = get2DecimalNumber(totalPrice * 0.2);
+        total = get2DecimalNumber(totalPrice - discount);
     }
     else {
         alert('Invalid Coupon Code');
@@ -81,7 +89,7 @@ function buy(target) {
 
 function goHome(target) {
     // console.log(target);
-    window.location="index.html";
+    window.location = "index.html";
 }
 
 
